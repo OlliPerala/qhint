@@ -1,0 +1,27 @@
+{
+    "name": "ghint",
+    "description": "qhint dependencies",
+    "main": [
+        "ghint.js"
+    ],
+    "dependencies": {
+        "jquery": "latest",
+        "qunit": "latest",
+        "jshint": "latest"
+    },
+    "license": "https://github.com/OlliPerala/qhint/blob/master/LICENSE.html",
+    "ignore": [
+        "**/.*",
+        "!LICENSE.html",
+        "package.json",
+        "bower.json",
+        "Gruntfile.js",
+        "node_modules",
+        "test"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/gyoshev/qhint.git"
+    },
+    "private": true
+}
