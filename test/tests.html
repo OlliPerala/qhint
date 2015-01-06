@@ -2,10 +2,10 @@
 <html>
 <head>
     <title>qHint tests</title>
-    <script src="http://code.jquery.com/jquery-latest.js"></script>
-    <link rel="stylesheet" href="../qunit/qunit/qunit.css" media="screen" />
-    <script src="../qunit/qunit/qunit.js"></script>
-    <script src="../jshint-2.1.9.js"></script>
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <link rel="stylesheet" href="../bower_components/qunit/qunit/qunit.css" media="screen" />
+    <script src="../bower_components/qunit/qunit/qunit.js"></script>
+    <script src="../bower_components/jshint/dist/jshint.js"></script>
     <script src="../qhint.js"></script>
 
     <script>
@@ -57,7 +57,7 @@
             }
         });
 
-        test("calls with one parameter uses it as test name", function(assert) {
+        QUnit.test("calls with one parameter uses it as test name", function(assert) {
             jsHintTest("foo.js");
 
             assert.equal(asyncTestArgs[0], "foo.js");
